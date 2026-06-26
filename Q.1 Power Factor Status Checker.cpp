@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double powerFactor;
+
+    cout << "Power Factor Status Checker" << endl;
+    cout << "Enter the power factor: ";
+    cin >> powerFactor;
+
+    if (powerFactor < 0 || powerFactor > 1) {
+        cout << "Invalid power factor" << endl;
+    }
+    else if (powerFactor <= 0.50) {
+        cout << "Poor power factor" << endl;
+    }
+    else if (powerFactor <= 0.80) {
+        cout << "Fair power factor" << endl;
+    }
+    else if (powerFactor <= 0.95) {
+        cout << "Good power factor" << endl;
+    }
+    else {
+        cout << "Excellent power factor" << endl;
+    }
+
+    return 0;
+}
